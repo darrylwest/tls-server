@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-axum-server = "0.7.1"
+axum-server = { version = "0.7.1", features = [ "rustls", "rustls-pemfile", "tokio-rustls", "rustls-pki-types" ] }
